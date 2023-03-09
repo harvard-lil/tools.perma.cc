@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <title>Perma Tools</title>
+    <meta name="description" content="Experiments and Tailored Tooling for High Fidelity Web Archives.">
+
+    <!-- TEMPORARY -->
+    <meta name="robots" content="noindex,follow" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
+    <meta property="og:image" content="https://tools.perma.cc/assets/social.png" />
+
+    <link rel="stylesheet" href="/css/pico.min.css">
+    <link rel="stylesheet" href="/css/index.css">
+  </head>
+
+  <body>
+    <main class="container">
+      <header>
+        <h1>
+          <svg viewBox="0 0 111 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <path d="M85.434,50.386 C79.97,50.386 74.472,48.392 68.626,44.29 C62.975,40.335 57.661,34.869 52.521,29.583 C46.932,23.834 41.153,17.89 35.173,14.151 C31.462,11.832 28.117,10.704 24.949,10.704 C18.966,10.704 14.438,13.349 12.198,18.154 C11.223,20.262 10.704,22.755 10.704,25.352 C10.704,27.431 11.006,29.37 11.6,31.115 C13.488,36.726 18.086,39.682 24.901,39.682 C28.044,39.682 31.425,38.374 35.236,35.683 C37.765,33.89 40.567,31.436 44.044,27.968 L51.603,35.547 C47.639,39.501 44.498,42.238 41.419,44.421 C35.731,48.437 30.331,50.386 24.901,50.386 C13.561,50.386 4.799,44.465 1.462,34.548 C0.494,31.708 0,28.608 0,25.352 C0,21.155 0.838,17.216 2.49,13.645 C6.535,4.969 14.718,0 24.949,0 C30.182,0 35.383,1.66 40.847,5.075 C47.925,9.501 54.163,15.917 60.196,22.121 C65.208,27.277 69.942,32.146 74.769,35.524 C78.758,38.323 82.245,39.682 85.434,39.682 C92.397,39.682 97.037,36.728 98.853,31.139 C99.389,29.484 99.662,27.639 99.662,25.662 C99.662,22.865 99.11,20.224 98.066,18.023 C95.799,13.233 91.432,10.704 85.434,10.704 C81.909,10.704 78.293,11.885 74.382,14.314 C71.921,15.846 69.295,17.903 66.358,20.601 C66.17,20.774 65.988,20.943 65.805,21.113 L58.501,13.288 C58.707,13.096 58.914,12.904 59.121,12.715 C62.549,9.565 65.694,7.114 68.731,5.224 C74.391,1.708 79.854,0 85.434,0 C95.567,0 103.697,4.898 107.739,13.44 C109.457,17.062 110.366,21.289 110.366,25.662 C110.366,28.759 109.918,31.713 109.035,34.441 C105.79,44.428 96.968,50.386 85.434,50.386" id="Imported-Layers" fill="#000000"></path>
+            </g>
+          </svg>
+  
+          <span>Perma <em>Tools</em></span>
+        </h1>
+      </header>
+
+      <section>
+        <h2>Experiments and Tailored Tooling for<br> High Fidelity Web Archives </h2>
+
+        <p><strong>During almost ten years of work with legal scholars and US courts to preserve their citations, the <a href="https://perma.cc">Perma.cc</a> team has learned a lot about web archives that are authoritative, specific, and information-rich.</strong><br>The concerns of our user base give us a distinct perspective on how web archives might function at every step of the pipeline: from capture, to storage, to playback. This perspective has prompted independent development of the base tools and libraries that are used for web archiving.<br>Additionally, in tandem with the larger web archiving community we are interested in creating tools that support emerging standards <a href="https://specs.webrecorder.net/wacz/1.1.1/">like the .wacz file format</a>.</p>
+
+        <p><strong>This page <a href="#tools">outlines production tools and experimental projects</a> that we’ve built based on our explorations for use by our team and the field at large.</strong> These range from quick experiments that we spun up in a matter of weeks to longer term work to be used by our overarching Perma.cc project.</p>
+      
+        <p>Each is a response to a question that has implications beyond Perma.cc and are built for a broader context, but also addresses the core concerns of our user base: <strong>Fidelity, Specificity and Provenance</strong>.</p>
+
+        <p>In a broader context, we are interested in the <strong>decentralization of means</strong> for web archiving which has traditionally (by necessity) been a centralized and packaged process. Facilitated by <a href="https://blog.conifer.rhizome.org/2019/10/03/client-side-replay.html">new browser technology</a>, these tools broaden resources for folks who are interested in building and deploying their own solutions for collecting the web.</p>
+      
+        <p>All of our code is <strong>open source</strong> and <a href="https://github.com/harvard-lil">can be accessed on Github</a>, and we can be reached at <a href="mailto:info@perma.cc">info@perma.cc</a> if you have any questions!</p>
+
+        <hr>
+      </section>
+
+      <section>
+        <h2 id="tools">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0l-11 6v12.131l11 5.869 11-5.869v-12.066l-11-6.065zm-1 21.2l-8-4.268v-8.702l8 4.363v8.607zm10-4.268l-8 4.268v-9.793l-8.867-4.837 7.862-4.289 9.005 4.969v9.682zm-4.408-4.338l1.64-.917-.006.623-1.64.918.006-.624zm1.653-2.165l-1.641.919-.006.624 1.641-.918.006-.625zm0-1.19l-1.641.919-.006.624 1.641-.918.006-.625zm-3.747-.781l1.645-.96-.519-.273-1.646.959.52.274zm4.208 6.33l-.486-1.865-1.641.919-.523 2.431c-.229 1.105.422 1.31 1.311.812.886-.497 1.548-1.437 1.339-2.297zm-1.335 1.684c-.411.23-.821.262-.817-.136.005-.41.422-.852.835-1.083.407-.228.81-.25.806.165-.005.398-.415.825-.824 1.054zm-4.349-10.625l-.519-.274-1.646.96.52.274 1.645-.96zm-1.559-.826l-1.646.96.523.277 1.646-.96-.523-.277zm1.992 2.885l1.644-.958-.515-.274-1.647.958.518.274zm3.001 1.744l1.646-.96-.52-.273-1.645.959.519.274zm-6.029-5.177l-1.645.96.516.274 1.647-.959-.518-.275zm1.992 2.886l1.646-.96-.52-.274-1.645.959.519.275zm3.058 1.689l1.646-.959-.518-.274-1.646.96.518.273z"/></svg>
+          <span>Capture Tools</span>
+        </h2>
+
+        <details>
+          <summary role="button" class="contrast">
+            <span role="heading" aria-level="3">The <strong>Scoop</strong> Capture Engine</span>
+          </summary>
+          
+          <h4>Because we wondered:</h4>
+          <p><strong>What would a browser-based capture engine look like if its main goal was to create evidence for an article, court case, or fact check?</strong></p>
+
+          <p><strong>Scoop</strong> is a high fidelity, browser-based, web archiving capture engine from the <a href="https://lil.law.harvard.edu/">Harvard Library Innovation Lab</a>.</p>
+          
+          <p>Fine-tune this custom web capture software to create robust single-page captures of the internet with accurate and complete <strong>provenance information</strong>.</p>
+        
+          <p>With extensive options for asset formats and inclusions, Scoop will create <code>.warc</code>, <code>warc.gz</code> or <code>.wacz</code> files to be stored by users and replayed using the web archive replay software of their choosing.</p>
+        
+          <p>Scoop also comes with built-in support for the <a href="https://specs.webrecorder.net/wacz-auth/0.1.0/">WACZ Signing and Verification specification</a>, allowing users to cryptographically sign their captures.</p>
+          
+          <p>
+            <a href="https://github.com/harvard-lil/scoop" role="button">
+              <img src="/assets/github-white.svg" alt="Github" aria-hidden="true"/>
+              <span>Scoop on GitHub</span>
+            </a>
+          </p>
+        </details>
+      </section>
+
+      <section>
+        <h2>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M24 21v-6h-18v6h18zm-3-4c.553 0 1 .448 1 1s-.447 1-1 1c-.552 0-1-.448-1-1s.448-1 1-1zm-7.806 0h1.275l-.864 2h-1.274l.863-2zm-2.141 0h1.275l-.863 2h-1.275l.863-2zm-2.19 0h1.275l-.863 2h-1.275l.863-2zm-4.863.941c-2.253-.29-4-2.194-4-4.524 0-2.252 1.626-4.121 3.767-4.506.177-3.294 2.895-5.911 6.233-5.911s6.056 2.617 6.233 5.911c2.005.361 3.541 2.029 3.729 4.089h-1.991c-.279-2.105-2.674-2.333-3.65-2.401.117-1.958-.555-5.599-4.321-5.599-4.438 0-4.359 4.75-4.321 5.599-.945-.037-3.679.341-3.679 2.818 0 1.223.856 2.245 2 2.511v2.013z"/></svg>
+          <span>Storage, Hosting and Playback</span>
+        </h2>
+
+        <details>
+          <summary role="button" class="contrast">
+            <span role="heading" aria-level="3">The <strong>warc-embed</strong> hosting boilerplate</span>
+          </summary>
+          
+          <h4>Because we wondered:</h4>
+          <p><strong>How could browser-based playback of web archives shift how people access collections of preserved web content?</strong></p>
+
+          <p>Experimental proxy and wrapper boilerplate for safely and efficiently embedding Web Archives (<code>.warc</code>, <code>.warc.gz</code>, <code>.wacz</code>) into web pages.</p>
+          
+          <p><strong>This implementation:</strong></p>
+          
+          <ul>
+            <li>Wraps <a href="https://replayweb.page/docs/embedding">Webrecorder's &lt;replay-web-page&gt;</a> client-side playback technology.</li>
+            <li>Serves, proxies and caches web archive files using <a href="https://www.nginx.com/">NGINX</a>.</li>
+            <li>Allows for two-way communication between the embedding website and the embedded archive using post messages.</li>
+          </ul>
+          
+          <p>
+            <a href="https://github.com/harvard-lil/warc-embed" role="button">
+              <img src="/assets/github-white.svg" alt="Github" aria-hidden="true"/>
+              <span>warc-embed on GitHub</span>
+            </a>
+          </p>
+
+          <p><strong>See also:</strong> <a href="https://warcembed-demo.lil.tools/">Live Demo</a>, <a href="https://lil.law.harvard.edu/blog/2022/09/15/opportunities-and-challenges-of-client-side-playback/">Blog post</a></p>
+
+        </details>
+      </section>
+
+      <section>
+        <h2>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.625 19.46c-.264 1.696-.97 3.247-2.1 4.54-.065-.461-.254-.908-.433-1.266-.409.216-.899.33-1.328.33l-.265-.016c1.199-1.25 1.791-2.544 1.965-4.27.281.079.623.12 1.053.12.415.284.578.46 1.108.562zm4.875 3.589c-1.197-1.248-1.782-2.549-1.957-4.271-.283.079-.625.122-1.061.122-.414.285-.587.461-1.106.561.264 1.697.97 3.247 2.099 4.54.065-.461.254-.908.433-1.266.51.269 1.131.372 1.592.314zm-4.992-4.829c-.704-.494-.552-.447-1.423-.444h-.002c-.362 0-.685-.225-.794-.557-.267-.797-.176-.673-.879-1.163-.302-.208-.418-.577-.307-.9.273-.793.273-.641 0-1.438-.109-.32.002-.691.307-.9.703-.488.611-.365.879-1.163.109-.333.432-.557.794-.557h.002c.87.002.718.052 1.423-.444.146-.102.318-.154.492-.154s.346.052.492.154c.704.495.552.447 1.423.444h.001c.363 0 .686.224.797.557.266.796.172.673.877 1.163.223.153.348.397.348.65l-.042.25c-.272.793-.272.641 0 1.438.111.317 0 .69-.306.9-.705.489-.611.366-.877 1.163-.205.614-.656.555-1.18.555-.463 0-.465.042-1.041.446-.293.207-.691.207-.984 0zm.492-1.814c1.088 0 1.969-.882 1.969-1.969 0-1.087-.881-1.969-1.969-1.969s-1.969.881-1.969 1.969c0 1.087.881 1.969 1.969 1.969zm-4.674 1.333c-1.675 1.058-3.561 2.247-3.952 2.493-.043-.772-.329-1.492-.828-2.084-.058-.074-5.813-7.4-7.222-9.204-1.109-1.42-.06-2.934 1.23-2.934 1.694 0 2.369 2.207.894 3.163l1.163 1.486 8.053-4.551c1.396-1.032 1.79-2.938.914-4.434-.605-1.032-1.726-1.674-2.924-1.674-.475 0-.936.098-1.373.292l-8.264 4.227c-1.301.624-2.017 1.846-2.017 3.147 0 .816.282 1.663.877 2.412 1.444 1.815 7.261 9.253 7.319 9.328.862 1.147.017 2.753-1.376 2.753-.989 0-1.516-.705-1.667-1.308-.176-.705.069-1.407.773-1.858l-1.141-1.458c-.855.602-1.4 1.515-1.507 2.536-.228 2.174 1.504 3.929 3.557 3.929.63 0 1.255-.174 1.807-.502l5.485-3.458c.264-.415.529-1.431.199-2.301zm-3.319-15.755c.203-.095.431-.145.659-.145.577 0 1.082.305 1.349.816.338.645.244 1.59-.594 2.071l-5.307 3.006c0-1.191-.581-2.284-1.57-2.952l5.463-2.796zm1.987 6.267l1.725 2.117c.348-.525.858-.921 1.46-1.121l-1.562-1.916-1.623.92zm-2.886 8.043l2.871-1.628-.633-.825-2.863 1.661.625.792zm1.842-6.987l-5.012 2.943.624.792 5.026-2.951-.638-.784zm1.286 1.597l-5.035 2.965.624.792 5.049-2.974-.638-.783z"/></svg>
+          <span>Support for Emerging Standards</span>
+        </h2>
+
+        <details>
+          <summary role="button" class="contrast">
+            <span role="heading" aria-level="3"><strong>wacz-signing</strong> library</span>
+          </summary>
+
+          <h4>Because we wondered:</h4>
+
+          <p><strong>Given that there is now a recommended way to “sign” a web archive to attest to its authenticity, what would that process look like and how efficient could it be?</strong></p>
+
+          <p>This is a library for signing and timestamping file hashes. This package builds on work by <a href="https://github.com/webrecorder/authsign">Ilya Kreymer and Webrecorder in authsign</a>. It is intended for use in WACZ signing (and to a lesser extent, verification), as set forth in the <a href="https://specs.webrecorder.net/wacz-auth/0.1.0/">Webrecorder Recommendation WACZ Signing and Verification</a>, which our director Jack Cushman contributed to.</p> 
+          
+          <p>It is an attempt to reduce authsign's footprint, and decouple signing from any specific web API, authentication, and the process of obtaining key material. It also omits the optional cross-signing mechanism specified in the recommendation and provided by authsign.</p>
+
+          <p>
+            <a href="https://github.com/harvard-lil/wacz-signing" role="button">
+              <img src="/assets/github-white.svg" alt="Github" aria-hidden="true"/>
+              <span>wacz-signing on GitHub</span>
+            </a>
+          </p>
+        </details>
+
+        <details>
+          <summary role="button" class="contrast">
+            <span role="heading" aria-level="3"><strong>js-wacz</strong> library and CLI</span>
+          </summary>
+
+          <h4>Because we wondered:</h4>
+
+          <p><strong>How can we facilitate the creation of .wacz files and expand the WACZ ecosystem?</strong></p>
+
+          <p><strong>js-wacz</strong> is a JavaScript module and CLI tool for working with web archive data using the <a href="https://specs.webrecorder.net/wacz/1.1.1/">WACZ format specification</a>, similar to <a href="https://github.com/webrecorder/py-wacz">Webrecorder's py-wacz</a>.</p>
+          
+          <p>It can be used to combine a set of <code>.warc</code> / <code>.warc.gz</code> files into a single <code>.wacz</code> file programmatically (Node.js) or in the command line.</p>
+
+          <p>js-wacz makes use of workers to process as many WARC files in parallel as the host machine can handle.</p>
+
+          <p>
+            <a href="https://github.com/harvard-lil/js-wacz" role="button">
+              <img src="/assets/github-white.svg" alt="Github" aria-hidden="true"/>
+              <span>js-wacz on GitHub</span>
+            </a>
+          </p>
+        </details>
+      </section>
+
+      <section>
+        <h2>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.759 20.498c-2.342-3.663-5.575-6.958-5.743-11.498h-2.016c.173 5.212 3.512 8.539 5.953 12.356.143.302-.068.644-.377.644h-1.264l-4.734-7h-3.52c.873-1.665 1.85-3.414 1.936-6h-2.01c-.169 4.543-3.421 7.864-5.743 11.498-.165.347-.241.707-.241 1.057 0 1.283 1.023 2.445 2.423 2.445h13.153c1.4 0 2.424-1.162 2.424-2.446 0-.35-.076-.709-.241-1.056zm-4.759-15.498c0 1.105-.896 2-2 2s-2-.895-2-2 .896-2 2-2 2 .895 2 2zm-5-1.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5.672-1.5 1.5-1.5 1.5.671 1.5 1.5zm0 3.5c0 .552-.447 1-1 1s-1-.448-1-1 .447-1 1-1 1 .448 1 1zm3-6c0 .552-.447 1-1 1s-1-.448-1-1 .447-1 1-1 1 .448 1 1z"/></svg>
+          <span>Experiments</span>
+        </h2>
+
+        <details>
+          <summary role="button" class="contrast">
+            <span role="heading" aria-level="3">Save Your Threads - <strong>thread-keeper</strong></span>
+          </summary>
+          
+          <h4>Because we wondered:</h4>
+
+          <p><strong>Is it possible to do anything about all of that Twitter content that was disappearing and being faked when a certain someone took over the company?</strong></p>
+
+          <p>Thread Keeper is a tool to create high fidelity captures of Twitter threads as sealed PDFs. <a href="https://social.perma.cc/static/example.pdf">Here's an example PDF</a> we made from <a href="https://twitter.com/doctorow/status/1591759999323492358">this tweet</a>.</p>
+
+          <p>There are lots of screenshots of Twitter threads going around. Some are real, some are fake. You can't tell who made them, or when they were made.</p>
+
+          <p>PDFs let us apply document signatures and timestamps so anyone can check, in the future, that a PDF you download with this site really came from the Harvard Library Innovation Lab and hasn't been edited.</p>
+
+          <p>PDFs also let us bundle in additional media as attachments. Each signed PDF currently includes all images in the page (so you can see full size images that are cropped in the PDF view), the primary video on the page if any, as well as a list of all the t.co links on the thread and their actual destinations.</p>
+
+          <p>
+            <a href="https://github.com/harvard-lil/thread-keeper" role="button">
+              <img src="/assets/github-white.svg" alt="Github" aria-hidden="true"/>
+              <span>thread-keeper on GitHub</span>
+            </a>
+          </p>
+
+          <p><strong>See also:</strong> <a href="https://social.perma.cc">social.perma.cc</a></p>
+        </details>
+
+      </section>
+
+      <section>
+        <h2>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 16h13v1h-13v-1zm13-3h-13v1h13v-1zm0-6h-5v1h5v-1zm0 3h-5v1h5v-1zm-17-8v17.199c0 .771-1 .771-1 0v-15.199h-2v15.98c0 1.115.905 2.02 2.02 2.02h19.958c1.117 0 2.022-.904 2.022-2.02v-17.98h-21zm19 17h-17v-15h17v15zm-9-12h-6v4h6v-4z"/></svg>
+          <span>News</span>
+        </h2>
+
+        <p>
+          <a href="https://lil.law.harvard.edu/blog/2023/01/18/thread-keeper-iipc-webinar/">IIPC Technical Speaker Series: Archiving Twitter</a><br>
+          <em>lil.law.harvard.edu - January 18, 2023</em>
+        </p>
+
+        <p>
+          <a href="https://blogs.harvard.edu/perma/2022/12/20/use-social-perma-cc-to-preserve-twitter-threads/">Use Social.Perma.cc To Preserve Twitter Threads!</a><br>
+          <em>blogs.harvard.edu/perma - December 22, 2022</em>
+        </p>
+
+        <p>
+          <a href="https://lil.law.harvard.edu/blog/2022/09/15/opportunities-and-challenges-of-client-side-playback/">Web Archiving: Opportunities and Challenges of Client-Side Playback</a><br>
+          <em>lil.law.harvard.edu - September 15, 2022</em>
+        </p>
+
+      </section>
+
+      <hr>
+
+      <footer>
+        <a href="https://lil.law.harvard.edu">
+          <img src="/assets/lil.svg" alt="Harvard Library Innovation Lab"/>
+        </a>
+
+        <p>
+          <small>
+          <a href="https://twitter.com/harvardlil">@harvardlil</a> on Twitter - <a href="https://ocb.to/lawvocado">Subscribe to our Newsletter</a>.<br>
+          Contact: <a href="mailto:info@perma.cc">info@perma.cc</a>
+          </small>
+        </p>
+
+      </footer>
+    </main>
+  </body>
+</html>
