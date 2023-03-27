@@ -28,6 +28,10 @@
   --contrast-inverse: #fff;
 }
 
+html {
+  scroll-padding-top: 8rem;
+}
+
 body {
   background: #fcfcfb;
   background: linear-gradient(48deg, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 71%, rgba(200, 27, 216, 0.17) 100%);
