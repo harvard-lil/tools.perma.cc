@@ -12,6 +12,23 @@
 
     <link rel="stylesheet" href="/css/pico.min.css">
     <link rel="stylesheet" href="/css/index.css">
+
+    <script type="module">
+    // On document ready:
+    // If hash = tool anchor, automatically open associated accordion
+    (() => {
+      if (!window.location.hash) return
+
+      const accordion = document.querySelector(`details${window.location.hash}`) 
+      if (!accordion) return
+
+      const summary = accordion.querySelector('summary')
+      if (!summary) return
+
+      accordion.setAttribute('open', 'open')
+      requestAnimationFrame(() => summary.focus())
+    })()
+    </script>
   </head>
 
   <body>
@@ -50,7 +67,7 @@
           <span>Capture Tools</span>
         </h2>
 
-        <details>
+        <details id="scoop">
           <summary role="button" class="contrast">
             <span role="heading" aria-level="3">The <strong>Scoop</strong> Capture Engine</span>
           </summary>
@@ -81,7 +98,7 @@
           <span>Storage, Hosting and Playback</span>
         </h2>
 
-        <details>
+        <details id="warc-embed">
           <summary role="button" class="contrast">
             <span role="heading" aria-level="3">The <strong>warc-embed</strong> hosting boilerplate</span>
           </summary>
@@ -117,7 +134,7 @@
           <span>Support for Emerging Standards</span>
         </h2>
 
-        <details>
+        <details id="wacz-signing">
           <summary role="button" class="contrast">
             <span role="heading" aria-level="3"><strong>wacz-signing</strong> library</span>
           </summary>
@@ -138,7 +155,7 @@
           </p>
         </details>
 
-        <details>
+        <details id="js-wacz">
           <summary role="button" class="contrast">
             <span role="heading" aria-level="3"><strong>js-wacz</strong> library and CLI</span>
           </summary>
@@ -168,7 +185,7 @@
           <span>Experiments</span>
         </h2>
 
-        <details>
+        <details id="thread-keeper">
           <summary role="button" class="contrast">
             <span role="heading" aria-level="3">Save Your Threads - <strong>thread-keeper</strong></span>
           </summary>
@@ -198,7 +215,7 @@
       </section>
 
       <section>
-        <h2>
+        <h2 id="news">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 16h13v1h-13v-1zm13-3h-13v1h13v-1zm0-6h-5v1h5v-1zm0 3h-5v1h5v-1zm-17-8v17.199c0 .771-1 .771-1 0v-15.199h-2v15.98c0 1.115.905 2.02 2.02 2.02h19.958c1.117 0 2.022-.904 2.022-2.02v-17.98h-21zm19 17h-17v-15h17v15zm-9-12h-6v4h6v-4z"/></svg>
           <span>News</span>
         </h2>
