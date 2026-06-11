@@ -48,7 +48,7 @@
       <section>
         <h2>Experiments and Tailored Tooling for<br> High Fidelity Web Archives </h2>
 
-        <p><strong>During almost ten years of work with legal scholars and US courts to preserve their citations, the <a href="https://perma.cc">Perma.cc</a> team has learned a lot about web archives that are authoritative, specific, and information-rich.</strong> The concerns of our user base give us a distinct perspective on how web archives might function at every step of the pipeline: from capture, to storage, to playback. This perspective has prompted independent development of the base tools and libraries that are used for web archiving. Additionally, in tandem with the larger web archiving community we are interested in creating tools that support emerging standards <a href="https://specs.webrecorder.net/wacz/1.1.1/">like the .wacz file format</a>.</p>
+        <p><strong>Perma Tools is built on more than a decade of experience developing <a href="https://perma.cc">Perma.cc</a>. Through collaborating with academic libraries, courts, and legal scholars to preserve citations, the Perma team has gained deep expertise about web archives that are authoritative, specific, and information-rich.</strong> The concerns of our user base give us a distinct perspective on how web archives might function at every step of the pipeline: from capture, to storage, to playback. This perspective has prompted independent development of the base tools and libraries that are used for web archiving. Additionally, in tandem with the larger web archiving community we are interested in creating tools that support emerging standards <a href="https://specs.webrecorder.net/wacz/1.1.1/">like the .wacz file format</a>.</p>
 
         <p><strong>This page <a href="#tools">outlines production tools and experimental projects</a> that we’ve built based on our explorations for use by our team and the field at large.</strong> These range from quick experiments that we spun up in a matter of weeks to longer term work to be used by our overarching Perma.cc project.</p>
       
@@ -90,6 +90,39 @@
             </a>
           </p>
         </details>
+      </section>
+
+      <section>
+        <h2>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z"/></svg>
+          <span>Processing Tools</span>
+        </h2>
+
+        <details id="warcbench”>
+          <summary role="button" class="contrast">
+            <span role="heading" aria-level="3">The <strong>WARCbench</strong> command line tool</span>
+          </summary>
+          
+          <h4>Because we wondered:</h4>
+          <p><strong>How might we design a resilient, efficient, and highly configurable tool for working with WARC files in all their variety, letting researchers explore without prior knowledge of the format?</strong></p>
+
+          <p><strong>WARCbench</strong> is a tool for exploring, analyzing, transforming, recombining, and extracting data from WARC (Web ARChive) files.</p>
+          
+          <p>WARCbench was designed to make as few assumptions as possible about your familiarity with web archives, the kind of WARC you are working with, or what you want to do with it. </p>
+        
+          <p>The goal is not to hide the complexity of web archives. It is to make that complexity easier to inspect, manipulate, and learn from so you can experiment and iterate.</p>
+          
+          <p>
+            <a href="https://github.com/harvard-lil/warcbench" role="button">
+              <img src="/assets/github-white.svg" alt="Github" aria-hidden="true"/>
+              <span>WARCbench on GitHub</span>
+            </a>
+          </p>
+
+<p><strong>See also:</strong> <a href="https://lil.law.harvard.edu/blog/2026/06/09/warcbench-a-swiss-army-knife-for-warc-processing/">Blog Post</a></p>
+
+        </details>
+
       </section>
 
       <section>
@@ -228,33 +261,6 @@
 
         </details>
 
-        <details id="thread-keeper">
-          <summary role="button" class="contrast">
-            <span role="heading" aria-level="3">Save Your Threads - <strong>thread-keeper</strong></span>
-          </summary>
-          
-          <h4>Because we wondered:</h4>
-
-          <p><strong>Is it possible to do anything about all of that Twitter content that was disappearing and being faked when a certain someone took over the company?</strong></p>
-
-          <p>Thread Keeper is a tool to create high fidelity captures of Twitter threads as sealed PDFs. <a href="https://social.perma.cc/static/example.pdf">Here's an example PDF</a> we made from <a href="https://twitter.com/doctorow/status/1591759999323492358">this tweet</a>.</p>
-
-          <p>There are lots of screenshots of Twitter threads going around. Some are real, some are fake. You can't tell who made them, or when they were made.</p>
-
-          <p>PDFs let us apply document signatures and timestamps so anyone can check, in the future, that a PDF you download with this site really came from the Harvard Library Innovation Lab and hasn't been edited.</p>
-
-          <p>PDFs also let us bundle in additional media as attachments. Each signed PDF currently includes all images in the page (so you can see full size images that are cropped in the PDF view), the primary video on the page if any, as well as a list of all the t.co links on the thread and their actual destinations.</p>
-
-          <p>
-            <a href="https://github.com/harvard-lil/thread-keeper" role="button">
-              <img src="/assets/github-white.svg" alt="Github" aria-hidden="true"/>
-              <span>thread-keeper on GitHub</span>
-            </a>
-          </p>
-
-          <p><strong>See also:</strong> <a href="https://social.perma.cc">social.perma.cc</a></p>
-        </details>
-
       </section>
 
       <section>
@@ -263,6 +269,16 @@
           <span>News</span>
         </h2>
 
+        <p>
+          <a href="https://lil.law.harvard.edu/blog/2026/06/09/warcbench-a-swiss-army-knife-for-warc-processing/">WARCbench: A Swiss Army Knife for WARC Processing</a>
+          <em>lil.law.harvard.edu - June 6, 2026</em>
+        </p>
+
+        <p>
+          <a href="https://lil.law.harvard.edu/blog/2024/06/28/warc-gpt-on-tour-talk-transcript-and-slide-decks/">WARC-GPT “on tour”: Talk transcript and slide decks</a>
+          <em>lil.law.harvard.edu - June 28, 2024</em>
+        </p>
+        
         <p>
           <a href="https://lil.law.harvard.edu/blog/2024/02/12/warc-gpt-an-open-source-tool-for-exploring-web-archives-with-ai/">WARC-GPT: An Open-Source Tool for Exploring Web Archives Using AI</a>
           <em>lil.law.harvard.edu - February 12, 2023</em>
@@ -309,7 +325,7 @@
 
         <p>
           <small>
-          <a href="https://twitter.com/harvardlil">@harvardlil</a> on Twitter - <a href="https://ocb.to/lawvocado">Subscribe to our Newsletter</a>.<br>
+          <a href="https://bsky.app/profile/harvardlil.bsky.social">@harvardlil.bsky.social</a> on Bluesky - <a href="https://ocb.to/lawvocado">Subscribe to our Newsletter</a>.<br>
           Contact: <a href="mailto:info@perma.cc">info@perma.cc</a>
           </small>
         </p>
